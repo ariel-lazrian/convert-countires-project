@@ -1,0 +1,199 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 52%.5;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* must be equal with % so it wont move */
+/* 50% */
+.form {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  height: 40rem;
+  width: 40%;
+
+}
+/* 40% */
+.container {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  width: 38%;
+  height: 40rem;
+  background-color: white;
+
+}
+
+.container > .main-content {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.form > .container-input {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+.form > .container-input > .input {
+  border: 3px solid gray;
+  height: 100%;
+  width: 98%;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  overflow: auto;
+  resize: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+.form > .text {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  margin-top: -40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.countries-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 100%;
+  white-space: pre;
+}
+
+.country {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.country > .country-text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25rem;
+  /* position: absolute; */
+  /* left: 5%; */
+  margin-left: 5%;
+  height: 100%;
+  width: 93%;
+  white-space: normal;
+}
+.country > .country-text p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-input > .buttons-place {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: -60px;
+  bottom: 0;
+}
+
+.clear {
+  width: 300px;
+  height: 50px;
+  width: 200px;
+}
+.submit {
+  height: 50px;
+  width: 200px;
+  margin-bottom: -50px;
+}
+
+.type {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.title > .hidden {
+  display: none;
+}
+
+.btn-place {
+  position: absolute;
+  bottom: 0%;
+  right: 7%;
+  height: 50px;
+  width: 120px;
+  margin-bottom: -60px;
+}
+.container-style {
+  border: 3px solid gray;
+}
+
+.button-color-click {
+  color: white;
+  background-color: black;
+}
+
+
+.validation {
+  height: 200px;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 50px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  z-index: 100;
+}
+
+.validate-success {
+  line-height: 130px;
+  background-color: rgba(55, 136, 37, 0.9);
+  display: none;
+}
+
+.validate-error {
+  display: none;
+  background-color: rgba(136, 58, 37, 0.9);
+}
+
+.show-validation {
+  display: block;
+}
+
+.input-year{
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  height: 50px;
+  width: 70px;
+}
