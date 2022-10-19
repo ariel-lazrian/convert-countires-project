@@ -1,8 +1,8 @@
 the site that i have built http://assaf.cc/country/.
 
 
-this project is converting the data from the site https://www.iucnredlist.org/ 
-it will take the data from the site and convert it to other data.
+this project is changing the data from this site https://www.iucnredlist.org/ 
+it will take the data from the site and change it to other data.
 example of the data:
 
 Extant (resident)
